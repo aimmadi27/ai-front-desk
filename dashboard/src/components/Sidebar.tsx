@@ -1,12 +1,14 @@
 import { NavLink } from "react-router-dom";
-import { LayoutDashboard, Phone, Calendar, Settings, MessageSquare } from "lucide-react";
+import { LayoutDashboard, Phone, Calendar, Settings, MessageSquare, CreditCard, PlusCircle } from "lucide-react";
 
 const links = [
   { to: "/", label: "Overview", icon: LayoutDashboard },
   { to: "/calls", label: "Call Log", icon: Phone },
   { to: "/bookings", label: "Bookings", icon: Calendar },
   { to: "/sms", label: "SMS", icon: MessageSquare },
+  { to: "/billing", label: "Billing", icon: CreditCard },
   { to: "/settings", label: "Settings", icon: Settings },
+  { to: "/onboarding", label: "Add Business", icon: PlusCircle },
 ];
 
 export default function Sidebar() {

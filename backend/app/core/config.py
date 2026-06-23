@@ -15,6 +15,10 @@ class Settings(BaseSettings):
 
     sendgrid_api_key: str = ""
 
+    airtable_api_key: str = ""
+
+    scheduler_secret: str = "change-me-in-production"
+
     app_env: str = "development"
     base_url: str = "http://localhost:8000"
 

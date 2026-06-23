@@ -6,6 +6,8 @@ import CallLog from "./pages/CallLog";
 import Bookings from "./pages/Bookings";
 import SMS from "./pages/SMS";
 import Settings from "./pages/Settings";
+import Onboarding from "./pages/Onboarding";
+import Billing from "./pages/Billing";
 import "./App.css";
 
 const queryClient = new QueryClient();
@@ -23,6 +25,8 @@ export default function App() {
               <Route path="/bookings" element={<Bookings />} />
               <Route path="/sms" element={<SMS />} />
               <Route path="/settings" element={<Settings />} />
+              <Route path="/onboarding" element={<Onboarding />} />
+              <Route path="/billing" element={<Billing />} />
             </Routes>
           </main>
         </div>

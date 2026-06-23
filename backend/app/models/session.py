@@ -1,5 +1,6 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import List
+from datetime import datetime, timezone
 
 
 class Message(BaseModel):
@@ -13,4 +14,5 @@ class Session(BaseModel):
     caller_number: str
     messages: List[Message] = []
     language: str = "en"
-    status: str = "active"  # active | completed | transferred
+    status: str = "active"  # active | completed | transferred | missed
+    created_at: str = Field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
